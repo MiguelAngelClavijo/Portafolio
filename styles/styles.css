@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400;500&display=swap");
+
+/*Configuración global*/
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --background: radial-gradient(100% 100% at 50% 0%, #000000 0%, #111111 100%);
+  --sm: 14px;
+  --md: 18px;
+  --lg: 20px;
+  --xlg: 28px;
+}
+
+/*Background*/
+
+html {
+  background: var(--black);
+  font-family: "Roboto Mono", monospace;
+}
+
+/*Configuracion body*/
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  color: var(--white);
+  align-items: center;
+}
+
+/*Estilos section header*/
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header h1 {
+  margin: 55px 0 0 0;
+  font-size: var(--xlg);
+}
+
+.photos {
+  display: flex;
+  gap: 107px;
+  margin: 50px 0 30px 0;
+}
+
+.photos img {
+  object-fit: cover;
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+}
+
+.icons {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 30px 0 50px 0;
+  gap: 80px;
+}
+
+.icons img {
+  width: 40px;
+  height: 40px;
+}
+
+.description {
+  display: flex;
+  text-align: center;
+  width: 80%;
+  height: 158px;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid var(--white);
+  border-bottom: 1px solid var(--white);
+}
+
+.description p {
+  font-size: var(--md);
+  font-weight: 500;
+}
+
+button {
+  width: 300px;
+  height: 54px;
+  background-color: transparent;
+  color: var(--white);
+  font-size: var(--md);
+  border: 2px solid var(--white);
+  margin: 0 80px;
+  font-weight: 500;
+  font-family: "Roboto Mono", monospace;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: var(--white);
+  color: var(--black);
+  font-weight: 700;
+}
+
+.proyects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  height: 158px;
+  margin-top: 30px;
+}
+
+.proyects p {
+  font-size: var(--lg);
+  margin-bottom: 50px;
+  font-weight: 500;
+}
